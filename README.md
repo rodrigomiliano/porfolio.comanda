@@ -1,7 +1,7 @@
 # 👨🏻‍💻 Mi porfolio minimalista
 
 <div align="center">
-<a href="https://porfolio.dev/">
+<a href="https://rodrigomiliano.netlify.app/">
 <img src="./public/porfolio.webp">
 </a>
 <p></p>
