@@ -1,0 +1,31 @@
+---
+import ServiceItem from "./ServiceItem.astro";
+const SERVICES = [
+  {   
+    title: "Registrá tu usuario",
+    detail: "Completando tus datos, realizarás el envío de los mismos para registrarlo en COMANDA. Tendrás que esperar la activación del mismo, por ello nos comunicaremos con vos lo antes posible.",
+  },
+  {   
+    title: "Registrá tu local",
+    detail: "El equipo de COMANDA se encargará de dar de alta tu local y asignarlo a tu usuario.",
+  },
+  {   
+    title: "Carga tus productos",
+    detail: "Todo lo que ofrecés en tu restaurante podrás cargarlo en COMANDA, elegí fotos reales de los productos, ofrecé una buena descripción y mantené el precio actualizado.",
+  },
+  {    
+    title: "Gestioná los pedidos",
+    detail: "Podrás ver todas las mesas, el detalle de los consumos, el estado y el total.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    SERVICES.map((service) => (
+      <li class="">
+        <ServiceItem {...service} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,54 +1,95 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro";
-import Briefcase from "@/components/icons/Briefcase.astro";
-import CodeIcon from "@/components/icons/Code.astro";
-import Experience from "@/components/Experience.astro";
-import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Team from "@/components/Team.astro";
+import Customer from "@/components/Customer.astro";
+import CustomerIcon from "@/components/icons/CustomerIcon.astro";
+import Face from "@/components/icons/Face.astro";
+import Heart from "@/components/icons/Heart.astro";
+import AboutUs from "@/components/AboutUs.astro";
+import OurValues from "@/components/OurValues.astro";
+import Services from "@/components/Services.astro";
+import ServicesIcon from "@/components/icons/ServicesIcon.astro";
+import TeamIcon from "@/components/icons/TeamIcon.astro";
 import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
-import Hero from "@/components/Hero.astro";
+import Contacto from "@/components/Contacto.astro";
 ---
 
 <Layout
-  title="Porfolio de Rodrigo - Desarrollador y Programador Web"
-  description="Contrata a Rodrigo para crear tu aplicación web o móvil."
+  title="Comanda - Salí a Comer"
+  description="Únete a Comanda para gestionar tu local."
 >
   <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
-      <Hero />
-    </SectionContainer>
-  </main>
-  <div class="space-y-24">
-    <SectionContainer id="experiencia">
+    <SectionContainer id="proyectos" class="py-16 md:py-36">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </h2>
-      <Experience />
-    </SectionContainer>
-
-    <SectionContainer id="proyectos">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
+        <!-- <CodeIcon class="size-7" />
+        Proyectos-->
       </h2>
       <Projects />
     </SectionContainer>
+  </main>
 
-    <SectionContainer id="sobre-mi">
+  <div class="space-y-24">
+    <SectionContainer id="quienes-somos">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Face class="size-8" />
+        Quienes somos
+      </h2>
+      <AboutUs />
+    </SectionContainer>
+
+    <SectionContainer id="valores">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Heart class="size-8" />
+        Valores
+      </h2>
+      <OurValues />
+    </SectionContainer>
+
+    <SectionContainer id="nuestro-equipo">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
       >
-        <ProfileCheck class="size-8" />
-        Sobre mí
+        <TeamIcon class="size-8" />
+        Nuestro equipo
       </h2>
-      <AboutMe />
+      <Team />
     </SectionContainer>
+
+    <SectionContainer id="servicios">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <ServicesIcon class="size-8" />
+        Servicios
+      </h2>
+      <Services />
+    </SectionContainer>
+
+    <SectionContainer id="clientes">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CustomerIcon class="size-8" />
+        Opiniones de clientes
+      </h2>
+      <Customer />
+    </SectionContainer>
+
+    <SectionContainer id="contacto">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Contacto />
+      </h2>
+    </SectionContainer>
+
   </div>
 </Layout>

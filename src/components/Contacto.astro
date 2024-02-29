@@ -1,0 +1,32 @@
+---
+const personalImageAlt = "foto Comanda";
+import Whatsapp from "@/components/icons/Whatsapp.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+---
+
+<div class="max-w-xl">
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    ¡Estamos para ayudarte!
+  </h1>
+  <div class="flex gap-4 mb-4"></div>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/comanda.webp"
+      alt={personalImageAlt}
+    />
+    <SocialPill href="mailto:soportecomanda@gmail.com">
+      <MailIcon class="size-4" />
+      Email
+    </SocialPill>
+    <SocialPill
+      href="https://wa.me/1167390317?text=Hola,%20quiero%20información%20para%20tener%20COMANDA%20en%20mi%20local"
+    >
+      <Whatsapp class="size-4" />
+      Chat
+    </SocialPill>
+  </nav>
+</div>
