@@ -1,8 +1,8 @@
 # 👨🏻‍💻 Mi porfolio minimalista
 
 <div align="center">
-<a href="https://rodrigomiliano.netlify.app/">
-<img src="./public/porfolio.webp">
+<a href="https://arg-comanda.netlify.app/">
+<img src="./public/porfolio-comanda.webp">
 </a>
 <p></p>
 </div>
